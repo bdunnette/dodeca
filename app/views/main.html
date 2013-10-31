@@ -2,6 +2,6 @@
   <h1>'Allo, 'Allo!</h1>
   <p>Available Collections:</p>
   <ul>
-      <li ng-repeat="thing in collections">{{thing.element_texts[0].text}}</li>
+      <li ng-repeat="thing in collections"><a href="#/collection/{{thing.id}}">{{thing.element_texts[0].text}}</a></li>
   </ul>
 </div>

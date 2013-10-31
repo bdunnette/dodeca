@@ -12,6 +12,10 @@ angular.module('dodecaApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/collection/:collectionId', {
+        templateUrl: 'views/collection.html',
+        controller: 'CollectionCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
